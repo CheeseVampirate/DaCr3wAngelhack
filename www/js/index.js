@@ -16,7 +16,67 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+var favorSaver = {
+    //Create global array for food
+    var foodArray = [
+        {food: 'Apple', expirationDate: '5/13/2017', category: 'Fruit', quantity: 1},
+        {food: 'Carrots', expirationDate: '12/13/2017', category: 'Vegetable', quantity: 3},
+        {food: 'Steak', expirationDate: '5/30/2017', category: 'Protein', quantity: 1}
+    ];
+
+    //Sort the function by the date field
+    function sortDate(foodSorted){
+        
+    }
+
+    //Take the foodArray and populate the Calendar
+    function displayFood(foodDisplay){
+        
+    }
+
+    //Add new food item to the foodArray
+    function addFood(foodItem) {
+        foodArray.push(foodItem);
+        sortDate(foodArray);
+    //Push new foodItem to the foodArray
+    }
+
+    /*
+    var myArray = [
+    {food: 'id', operator: 'eq', value: 1}, 
+    {food: 'cStatus', operator: 'eq', value: 2}, 
+    {food: 'money', operator: 'eq', value: 3}
+    ];
+
+    console.log(myArray);
+    myArray = myArray.filter(function( obj ) {
+        return obj.food !== 'money';
+    });
+    console.log(myArray);
+    */
+
+
+    //Delete Food object from the foodArray
+    //Needs functionality to search the foodArray for a matching id
+    function deleteFood(foodName) {
+        foodArray = foodArray.filter(function( obj ){
+            return obj.food !== foodName;
+        })
+    }
+
+    //Edit Food object from the foodArray
+    //Needs functionality to search the foodArray for a matching id
+    function editFood() {
+
+    }
+
+
+
+
+}
+
 var app = {
+
     // Application Constructor
     initialize: function() {
         this.bindEvents();
